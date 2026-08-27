@@ -1,0 +1,4603 @@
+{
+  "_meta": {
+    "target": "Mondelēz International — Vulnerability Disclosure Program",
+    "platform": "HackerOne",
+    "policyUrl": "HackerOne Mondelēz International VDP policy",
+    "programName": "mondelez",
+    "policyLastUpdated": "2026-02-27",
+    "rewardsLastUpdated": null,
+    "fileGeneratedOn": "2026-08-28",
+    "verificationStatus": "Transcribed from user-supplied Mondelēz International VDP policy + uploaded HackerOne structured scope CSV. Re-verify against the live HackerOne policy before testing.",
+    "machineScopeFile": "/home/Godfather_Cyb3r/bugbounty/autonomous-system/state/scope.json",
+    "matchingSemantics": "IMPORTANT: the HackerOne scope export contains 344 URL assets and 1 OTHER asset; it contains NO WILDCARD assets. Treat each eligible URL identifier as the specifically listed URL/domain asset only. Do not infer authorization for arbitrary subdomains. Four CSV assets are explicitly ineligible for submission and must be deny entries. Policy also prohibits testing any system not listed in Appendix A and any third-party website/application/service merely linked to or integrated with Mondelēz systems.",
+    "machineScopeTypes": {
+      "URL": "344 CSV entries. Exact listed HackerOne assets; not wildcard authorization.",
+      "OTHER": "1 CSV entry: Leaked Credentials; explicitly ineligible for submission."
+    },
+    "scopeStatistics": {
+      "totalStructuredAssets": 345,
+      "eligibleForSubmission": 341,
+      "ineligibleForSubmission": 4,
+      "eligibleForBounty": 0,
+      "assetTypes": {
+        "URL": 344,
+        "OTHER": 1
+      }
+    },
+    "responseTargets": {
+      "timeToFirstResponse": "1 hour average",
+      "timeToTriage": "5 days, 18 hours average",
+      "timeToResolution": "2 months, 5 days average",
+      "acknowledgementCommitment": "Within 2 business days"
+    },
+    "bountyAverages90d": null
+  },
+  "scope": {
+    "inScopeAssets": [
+      {
+        "identifier": "promotrident.com",
+        "type": "URL",
+        "match": "promotrident.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "clifbar.com.au",
+        "type": "URL",
+        "match": "clifbar.com.au",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "www.snack7days.com",
+        "type": "URL",
+        "match": "www.snack7days.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "orosaiwa.it",
+        "type": "URL",
+        "match": "orosaiwa.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "id.oreobts.com",
+        "type": "URL",
+        "match": "id.oreobts.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "heroes.cadbury.co.uk",
+        "type": "URL",
+        "match": "heroes.cadbury.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "disfrutaconphiladelphia.com",
+        "type": "URL",
+        "match": "disfrutaconphiladelphia.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "privacy.mondelezinternational.com",
+        "type": "URL",
+        "match": "privacy.mondelezinternational.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "sportszelet.hu",
+        "type": "URL",
+        "match": "sportszelet.hu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "fattorieosella.it",
+        "type": "URL",
+        "match": "fattorieosella.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "promocaoondadepremios.com.br",
+        "type": "URL",
+        "match": "promocaoondadepremios.com.br",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "dairylea.co.uk",
+        "type": "URL",
+        "match": "dairylea.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mmm.marabou.se",
+        "type": "URL",
+        "match": "mmm.marabou.se",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "lojamondelez.com.br",
+        "type": "URL",
+        "match": "lojamondelez.com.br",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "cadburyworld.co.uk",
+        "type": "URL",
+        "match": "cadburyworld.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "snackingright.com",
+        "type": "URL",
+        "match": "snackingright.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "rssl.com",
+        "type": "URL",
+        "match": "rssl.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "tridentbr.com.br",
+        "type": "URL",
+        "match": "tridentbr.com.br",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "th.oreosea.com",
+        "type": "URL",
+        "match": "th.oreosea.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "philadelphia-professional.it",
+        "type": "URL",
+        "match": "philadelphia-professional.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "steunjouwvereniging.be",
+        "type": "URL",
+        "match": "steunjouwvereniging.be",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "barni.org",
+        "type": "URL",
+        "match": "barni.org",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "tiendamondelez.com.co",
+        "type": "URL",
+        "match": "tiendamondelez.com.co",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "www.cadbury.com.au",
+        "type": "URL",
+        "match": "www.cadbury.com.au",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "passatempo.royalcontigo.com",
+        "type": "URL",
+        "match": "passatempo.royalcontigo.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "ljmondelez.com.br",
+        "type": "URL",
+        "match": "ljmondelez.com.br",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "greeting.twistandmake.com",
+        "type": "URL",
+        "match": "greeting.twistandmake.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "id.oreosea.com",
+        "type": "URL",
+        "match": "id.oreosea.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "oreo.ru",
+        "type": "URL",
+        "match": "oreo.ru",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "winwithphilly.no",
+        "type": "URL",
+        "match": "winwithphilly.no",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "sutaz-opavia.sk",
+        "type": "URL",
+        "match": "sutaz-opavia.sk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mondelezinternationalnutritionscience.com",
+        "type": "URL",
+        "match": "mondelezinternationalnutritionscience.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "recruiting.mdlz.com",
+        "type": "URL",
+        "match": "recruiting.mdlz.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "xn--glcksrad-75a.milka.at",
+        "type": "URL",
+        "match": "xn--glcksrad-75a.milka.at",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "jocca.it",
+        "type": "URL",
+        "match": "jocca.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "ganaconmdlz.com",
+        "type": "URL",
+        "match": "ganaconmdlz.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "solucionesmondelez.com",
+        "type": "URL",
+        "match": "solucionesmondelez.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "dormifelfedez.hu",
+        "type": "URL",
+        "match": "dormifelfedez.hu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "oreofun.dk",
+        "type": "URL",
+        "match": "oreofun.dk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "philadelphia.eu",
+        "type": "URL",
+        "match": "philadelphia.eu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "atistirmalikdunyasi.com",
+        "type": "URL",
+        "match": "atistirmalikdunyasi.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "fonzies.it",
+        "type": "URL",
+        "match": "fonzies.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "ritzcrackers.jp",
+        "type": "URL",
+        "match": "ritzcrackers.jp",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "gifts.tatesbakeshop.com",
+        "type": "URL",
+        "match": "gifts.tatesbakeshop.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "canjeatupremiomdlz.com",
+        "type": "URL",
+        "match": "canjeatupremiomdlz.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "perfectsnacks.com",
+        "type": "URL",
+        "match": "perfectsnacks.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "oreo.com.ar",
+        "type": "URL",
+        "match": "oreo.com.ar",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "culinaryinspoguide.com",
+        "type": "URL",
+        "match": "culinaryinspoguide.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "cadburymonopoly.com",
+        "type": "URL",
+        "match": "cadburymonopoly.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "www.winwithphilly.fi",
+        "type": "URL",
+        "match": "www.winwithphilly.fi",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "ejackson.co.uk",
+        "type": "URL",
+        "match": "ejackson.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "harmony.info",
+        "type": "URL",
+        "match": "harmony.info",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "figaro.cz",
+        "type": "URL",
+        "match": "figaro.cz",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "www.clifbar.com.au",
+        "type": "URL",
+        "match": "www.clifbar.com.au",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "soutez-opavia.cz",
+        "type": "URL",
+        "match": "soutez-opavia.cz",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "spar.nyerjakedvenceiddel.hu",
+        "type": "URL",
+        "match": "spar.nyerjakedvenceiddel.hu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "semester.marabou.se",
+        "type": "URL",
+        "match": "semester.marabou.se",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "brumikobjevitel.cz",
+        "type": "URL",
+        "match": "brumikobjevitel.cz",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "miamicfsweeps.com",
+        "type": "URL",
+        "match": "miamicfsweeps.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "scoresnackgoals.com",
+        "type": "URL",
+        "match": "scoresnackgoals.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "xn--80abwto.xn--p1ai",
+        "type": "URL",
+        "match": "xn--80abwto.xn--p1ai",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "ritzshrimp.com",
+        "type": "URL",
+        "match": "ritzshrimp.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "mwtr.com",
+        "type": "URL",
+        "match": "mwtr.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "www.enjoylifefoods.com",
+        "type": "URL",
+        "match": "www.enjoylifefoods.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "oreosocolapie.com",
+        "type": "URL",
+        "match": "oreosocolapie.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "snackfest.ro",
+        "type": "URL",
+        "match": "snackfest.ro",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "lajoieoreo.ca",
+        "type": "URL",
+        "match": "lajoieoreo.ca",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "lumeabarni.ro",
+        "type": "URL",
+        "match": "lumeabarni.ro",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "gethalls.com",
+        "type": "URL",
+        "match": "gethalls.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "oreopromo.com",
+        "type": "URL",
+        "match": "oreopromo.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "winwithphilly.com",
+        "type": "URL",
+        "match": "winwithphilly.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "id.snacksandmeals.app",
+        "type": "URL",
+        "match": "id.snacksandmeals.app",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "familiaterrabusi.com.ar",
+        "type": "URL",
+        "match": "familiaterrabusi.com.ar",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "https://ligamaissabor.pt/",
+        "type": "URL",
+        "match": "https://ligamaissabor.pt/",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "tiendamondelez.cr",
+        "type": "URL",
+        "match": "tiendamondelez.cr",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "hourlyjobs-us.mondelezinternational.com",
+        "type": "URL",
+        "match": "hourlyjobs-us.mondelezinternational.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "tuc.fun",
+        "type": "URL",
+        "match": "tuc.fun",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "marabou.com",
+        "type": "URL",
+        "match": "marabou.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "milka.ru",
+        "type": "URL",
+        "match": "milka.ru",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "oreoplayful.ca",
+        "type": "URL",
+        "match": "oreoplayful.ca",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mdlzcollaboration.com",
+        "type": "URL",
+        "match": "mdlzcollaboration.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "win-tuc.cz",
+        "type": "URL",
+        "match": "win-tuc.cz",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "guiaclorets.mx",
+        "type": "URL",
+        "match": "guiaclorets.mx",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "clifbar.com",
+        "type": "URL",
+        "match": "clifbar.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "thelunchbarman.co.za",
+        "type": "URL",
+        "match": "thelunchbarman.co.za",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "sea.oreobts.com",
+        "type": "URL",
+        "match": "sea.oreobts.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "tiendamondelez.com.ec",
+        "type": "URL",
+        "match": "tiendamondelez.com.ec",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mdlznutritionscience.com",
+        "type": "URL",
+        "match": "mdlznutritionscience.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "ir.mondelezinternational.com",
+        "type": "URL",
+        "match": "ir.mondelezinternational.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "sportszeletjoenergiak.hu",
+        "type": "URL",
+        "match": "sportszeletjoenergiak.hu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "cotedor.com",
+        "type": "URL",
+        "match": "cotedor.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "breathewithtomtom.com",
+        "type": "URL",
+        "match": "breathewithtomtom.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "oreo-starwars.ca",
+        "type": "URL",
+        "match": "oreo-starwars.ca",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "nillanummies.th12ty.com",
+        "type": "URL",
+        "match": "nillanummies.th12ty.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "klubbkakan.marabou.se",
+        "type": "URL",
+        "match": "klubbkakan.marabou.se",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "smukfest.marabou.dk",
+        "type": "URL",
+        "match": "smukfest.marabou.dk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "cadbury.ie",
+        "type": "URL",
+        "match": "cadbury.ie",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "win-tuc.sk",
+        "type": "URL",
+        "match": "win-tuc.sk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "cadburygems.in",
+        "type": "URL",
+        "match": "cadburygems.in",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "bassettsvitamins.co.uk",
+        "type": "URL",
+        "match": "bassettsvitamins.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "estate2026.fonzies.it",
+        "type": "URL",
+        "match": "estate2026.fonzies.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mondelezawayfromhome.com",
+        "type": "URL",
+        "match": "mondelezawayfromhome.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "twistandmake.com",
+        "type": "URL",
+        "match": "twistandmake.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "www.winwithphilly.se",
+        "type": "URL",
+        "match": "www.winwithphilly.se",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "tncc.com.au",
+        "type": "URL",
+        "match": "tncc.com.au",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mitiendamondelez.com.ar",
+        "type": "URL",
+        "match": "mitiendamondelez.com.ar",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "us.oreobts.com",
+        "type": "URL",
+        "match": "us.oreobts.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mezclaydisfruta.com.ar",
+        "type": "URL",
+        "match": "mezclaydisfruta.com.ar",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "admit-it-win.cadbury.co.uk",
+        "type": "URL",
+        "match": "admit-it-win.cadbury.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "promo.7days.com",
+        "type": "URL",
+        "match": "promo.7days.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "shop.oreo.com",
+        "type": "URL",
+        "match": "shop.oreo.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "pascallpromo.co.nz",
+        "type": "URL",
+        "match": "pascallpromo.co.nz",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "bigwinwin.cadbury.co.uk",
+        "type": "URL",
+        "match": "bigwinwin.cadbury.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "soutenezvotreassociation.be",
+        "type": "URL",
+        "match": "soutenezvotreassociation.be",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "nyerjakedvenceiddel.hu",
+        "type": "URL",
+        "match": "nyerjakedvenceiddel.hu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "snackworks.com",
+        "type": "URL",
+        "match": "snackworks.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "merendadanumeriuno.it",
+        "type": "URL",
+        "match": "merendadanumeriuno.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "oboy.eu",
+        "type": "URL",
+        "match": "oboy.eu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "fun.cadbury.co.uk",
+        "type": "URL",
+        "match": "fun.cadbury.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "epack.mondelezinternational.com",
+        "type": "URL",
+        "match": "epack.mondelezinternational.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "promofield.pe",
+        "type": "URL",
+        "match": "promofield.pe",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "my.oreobts.com",
+        "type": "URL",
+        "match": "my.oreobts.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "promoritz.com",
+        "type": "URL",
+        "match": "promoritz.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "lubiscuits.eu",
+        "type": "URL",
+        "match": "lubiscuits.eu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "sourpatchkids.com.au",
+        "type": "URL",
+        "match": "sourpatchkids.com.au",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "cadbury.com.au",
+        "type": "URL",
+        "match": "cadbury.com.au",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "loteriaoreo.pl",
+        "type": "URL",
+        "match": "loteriaoreo.pl",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "premiumcrackers.jp",
+        "type": "URL",
+        "match": "premiumcrackers.jp",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "cadbury.co.uk",
+        "type": "URL",
+        "match": "cadbury.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "medium",
+          "confidentiality": "medium",
+          "integrity": "medium"
+        }
+      },
+      {
+        "identifier": "milka-pasakyklabas.lt",
+        "type": "URL",
+        "match": "milka-pasakyklabas.lt",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "mmmax.milka.de",
+        "type": "URL",
+        "match": "mmmax.milka.de",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "ph.oreobts.com",
+        "type": "URL",
+        "match": "ph.oreobts.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "lubakery.co.uk",
+        "type": "URL",
+        "match": "lubakery.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mondelezvending.com",
+        "type": "URL",
+        "match": "mondelezvending.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "princepolo.pl",
+        "type": "URL",
+        "match": "princepolo.pl",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "freiafotballtur.no",
+        "type": "URL",
+        "match": "freiafotballtur.no",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "bis.com.br",
+        "type": "URL",
+        "match": "bis.com.br",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "concorsoesselunga.philadelphia.it",
+        "type": "URL",
+        "match": "concorsoesselunga.philadelphia.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "halls.jp",
+        "type": "URL",
+        "match": "halls.jp",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "www.lusingingpacks.be",
+        "type": "URL",
+        "match": "www.lusingingpacks.be",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "gethalls.ca",
+        "type": "URL",
+        "match": "gethalls.ca",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "opavia.info",
+        "type": "URL",
+        "match": "opavia.info",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "concorsomikadosummernights.it",
+        "type": "URL",
+        "match": "concorsomikadosummernights.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "oreoplayful.com",
+        "type": "URL",
+        "match": "oreoplayful.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "juegayganaconmdlz.com",
+        "type": "URL",
+        "match": "juegayganaconmdlz.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "vincilight.philadelphia.it",
+        "type": "URL",
+        "match": "vincilight.philadelphia.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "base-mondelez-ag.fr",
+        "type": "URL",
+        "match": "base-mondelez-ag.fr",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "milkamozi.hu",
+        "type": "URL",
+        "match": "milkamozi.hu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "sharecadbury.ca",
+        "type": "URL",
+        "match": "sharecadbury.ca",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "gustaredetop.ro",
+        "type": "URL",
+        "match": "gustaredetop.ro",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "fingerscrossed.cadbury.ie",
+        "type": "URL",
+        "match": "fingerscrossed.cadbury.ie",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "sjokoladehus.no",
+        "type": "URL",
+        "match": "sjokoladehus.no",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "lacta.gr",
+        "type": "URL",
+        "match": "lacta.gr",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "ganapremiosmdlz.com",
+        "type": "URL",
+        "match": "ganapremiosmdlz.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "phonejeeto.com",
+        "type": "URL",
+        "match": "phonejeeto.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "www.milka-sakisveiks.lv",
+        "type": "URL",
+        "match": "www.milka-sakisveiks.lv",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "hukitchen.com",
+        "type": "URL",
+        "match": "hukitchen.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "oreo-promo.ge",
+        "type": "URL",
+        "match": "oreo-promo.ge",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "in.oreobts.com",
+        "type": "URL",
+        "match": "in.oreobts.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "catalogohellojoy.com",
+        "type": "URL",
+        "match": "catalogohellojoy.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "enjoylifefoods.com",
+        "type": "URL",
+        "match": "enjoylifefoods.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "ph.oreosea.com",
+        "type": "URL",
+        "match": "ph.oreosea.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "tw.oreosea.com",
+        "type": "URL",
+        "match": "tw.oreosea.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "https://www.clifbar.com",
+        "type": "URL",
+        "match": "https://www.clifbar.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "schokolade.at",
+        "type": "URL",
+        "match": "schokolade.at",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "philly.com.au",
+        "type": "URL",
+        "match": "philly.com.au",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "croissantpromo.gr",
+        "type": "URL",
+        "match": "croissantpromo.gr",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "vn.oreosea.com",
+        "type": "URL",
+        "match": "vn.oreosea.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "loteria7days.pl",
+        "type": "URL",
+        "match": "loteria7days.pl",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mirabilandia.orosaiwa.it",
+        "type": "URL",
+        "match": "mirabilandia.orosaiwa.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "favourites.milka.de",
+        "type": "URL",
+        "match": "favourites.milka.de",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "suchard.es",
+        "type": "URL",
+        "match": "suchard.es",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "favourites.milka.com",
+        "type": "URL",
+        "match": "favourites.milka.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mondelezpromo.com",
+        "type": "URL",
+        "match": "mondelezpromo.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "gourmetfood.com.au",
+        "type": "URL",
+        "match": "gourmetfood.com.au",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "ygeiaspavlides.gr",
+        "type": "URL",
+        "match": "ygeiaspavlides.gr",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "fcmilka.de",
+        "type": "URL",
+        "match": "fcmilka.de",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "tuctime.it",
+        "type": "URL",
+        "match": "tuctime.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "smagenafguld.marabou.dk",
+        "type": "URL",
+        "match": "smagenafguld.marabou.dk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "eu.clifbar.com",
+        "type": "URL",
+        "match": "eu.clifbar.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "laligaconmassabor.es",
+        "type": "URL",
+        "match": "laligaconmassabor.es",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "cocoaprogram.info",
+        "type": "URL",
+        "match": "cocoaprogram.info",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "fruehling-knacken.milka.de",
+        "type": "URL",
+        "match": "fruehling-knacken.milka.de",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "mondelezinternational.com",
+        "type": "URL",
+        "match": "mondelezinternational.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "nyerjakekszekkel.hu",
+        "type": "URL",
+        "match": "nyerjakekszekkel.hu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "grenade.com",
+        "type": "URL",
+        "match": "grenade.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "recaldent-gum.com",
+        "type": "URL",
+        "match": "recaldent-gum.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "aida-mdlz.com",
+        "type": "URL",
+        "match": "aida-mdlz.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "virtualhiringassistant.mondelezinternational.com",
+        "type": "URL",
+        "match": "virtualhiringassistant.mondelezinternational.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "destroyvalentinesday.com",
+        "type": "URL",
+        "match": "destroyvalentinesday.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mysales.mdlz.com",
+        "type": "URL",
+        "match": "mysales.mdlz.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "recept.marabou.se",
+        "type": "URL",
+        "match": "recept.marabou.se",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "cocoalife.org",
+        "type": "URL",
+        "match": "cocoalife.org",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "cadburylollyrewards.com",
+        "type": "URL",
+        "match": "cadburylollyrewards.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "health-pro.snackmindful.com",
+        "type": "URL",
+        "match": "health-pro.snackmindful.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "tw.oreobts.com",
+        "type": "URL",
+        "match": "tw.oreobts.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "backtoschoolsnacks.com",
+        "type": "URL",
+        "match": "backtoschoolsnacks.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "oreo.mx",
+        "type": "URL",
+        "match": "oreo.mx",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "anniversariooro.orosaiwa.it",
+        "type": "URL",
+        "match": "anniversariooro.orosaiwa.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "snackfutures.com",
+        "type": "URL",
+        "match": "snackfutures.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "promocja7days.pl",
+        "type": "URL",
+        "match": "promocja7days.pl",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "lusingingpacks.nl",
+        "type": "URL",
+        "match": "lusingingpacks.nl",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "www.oreo.com",
+        "type": "URL",
+        "match": "www.oreo.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "bundakraft.com",
+        "type": "URL",
+        "match": "bundakraft.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "loteriamilka.pl",
+        "type": "URL",
+        "match": "loteriamilka.pl",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "snackworks.th12ty.com",
+        "type": "URL",
+        "match": "snackworks.th12ty.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "desfrutacomphiladelphia.com",
+        "type": "URL",
+        "match": "desfrutacomphiladelphia.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "cadburyfindtheticket.com.au",
+        "type": "URL",
+        "match": "cadburyfindtheticket.com.au",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "alpengold.me",
+        "type": "URL",
+        "match": "alpengold.me",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "belvita.life",
+        "type": "URL",
+        "match": "belvita.life",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "oreo-challenge.oreo.eu",
+        "type": "URL",
+        "match": "oreo-challenge.oreo.eu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "clubsocial.com.br",
+        "type": "URL",
+        "match": "clubsocial.com.br",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "my.rssl.com",
+        "type": "URL",
+        "match": "my.rssl.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "sg.oreosea.com",
+        "type": "URL",
+        "match": "sg.oreosea.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "ticketing.cadburyfc.com",
+        "type": "URL",
+        "match": "ticketing.cadburyfc.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "bournvita.ng",
+        "type": "URL",
+        "match": "bournvita.ng",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mdlzcusthelp.com",
+        "type": "URL",
+        "match": "mdlzcusthelp.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mdlzcusthelp.ca",
+        "type": "URL",
+        "match": "mdlzcusthelp.ca",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "oreo.co.za",
+        "type": "URL",
+        "match": "oreo.co.za",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "library.spotlightdam.com",
+        "type": "URL",
+        "match": "library.spotlightdam.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "cadbury.co.za",
+        "type": "URL",
+        "match": "cadbury.co.za",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "fidorka.cz",
+        "type": "URL",
+        "match": "fidorka.cz",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "tucjuhla.fi",
+        "type": "URL",
+        "match": "tucjuhla.fi",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "haztudiadelicioso.com",
+        "type": "URL",
+        "match": "haztudiadelicioso.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "toblerone.com",
+        "type": "URL",
+        "match": "toblerone.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "lacta.com.br",
+        "type": "URL",
+        "match": "lacta.com.br",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "fingerscrossed.cadbury.co.uk",
+        "type": "URL",
+        "match": "fingerscrossed.cadbury.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "lajoieoreo.com",
+        "type": "URL",
+        "match": "lajoieoreo.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "figaro.sk",
+        "type": "URL",
+        "match": "figaro.sk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "thebournvitaquiz.in",
+        "type": "URL",
+        "match": "thebournvitaquiz.in",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "milka.com",
+        "type": "URL",
+        "match": "milka.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "momentosnack.com",
+        "type": "URL",
+        "match": "momentosnack.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "matt-pokora.milka.com",
+        "type": "URL",
+        "match": "matt-pokora.milka.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "snackbites.in",
+        "type": "URL",
+        "match": "snackbites.in",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "sklepoweszukajki.pl",
+        "type": "URL",
+        "match": "sklepoweszukajki.pl",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mondelez-professional.de",
+        "type": "URL",
+        "match": "mondelez-professional.de",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "kr.oreobts.com",
+        "type": "URL",
+        "match": "kr.oreobts.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "tiendamondelez.com.pe",
+        "type": "URL",
+        "match": "tiendamondelez.com.pe",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "philadelphia-professional.de",
+        "type": "URL",
+        "match": "philadelphia-professional.de",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "toblerone.ch",
+        "type": "URL",
+        "match": "toblerone.ch",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "https://www.cadburygiftsdirect.co.uk",
+        "type": "URL",
+        "match": "https://www.cadburygiftsdirect.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "brumikobjavitel.sk",
+        "type": "URL",
+        "match": "brumikobjavitel.sk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "ca.oreobts.com",
+        "type": "URL",
+        "match": "ca.oreobts.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "th.oreobts.com",
+        "type": "URL",
+        "match": "th.oreobts.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "kvikklunsj.freia.no",
+        "type": "URL",
+        "match": "kvikklunsj.freia.no",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "xn--90aiefdldtba7bg.xn--p1ai",
+        "type": "URL",
+        "match": "xn--90aiefdldtba7bg.xn--p1ai",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "prepararoyal.com",
+        "type": "URL",
+        "match": "prepararoyal.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "vincialexdelpiero.it",
+        "type": "URL",
+        "match": "vincialexdelpiero.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "oreo.com.br",
+        "type": "URL",
+        "match": "oreo.com.br",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "clorets.jp",
+        "type": "URL",
+        "match": "clorets.jp",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "vincigrenade.it",
+        "type": "URL",
+        "match": "vincigrenade.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "lidl.nyerjakedvenceiddel.hu",
+        "type": "URL",
+        "match": "lidl.nyerjakedvenceiddel.hu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "promocjaoreo.pl",
+        "type": "URL",
+        "match": "promocjaoreo.pl",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "cadburytrytime.co.nz",
+        "type": "URL",
+        "match": "cadburytrytime.co.nz",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "philadelphiagenuss.de",
+        "type": "URL",
+        "match": "philadelphiagenuss.de",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "oreostayplayful.com",
+        "type": "URL",
+        "match": "oreostayplayful.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mondelez-afh.co.uk",
+        "type": "URL",
+        "match": "mondelez-afh.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "webform.philadelphia.com.mx",
+        "type": "URL",
+        "match": "webform.philadelphia.com.mx",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "suchard.bg",
+        "type": "URL",
+        "match": "suchard.bg",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "www.oreofun.se",
+        "type": "URL",
+        "match": "www.oreofun.se",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "gifting.twistandmake.com",
+        "type": "URL",
+        "match": "gifting.twistandmake.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "winforyoursquad.cadbury.ie",
+        "type": "URL",
+        "match": "winforyoursquad.cadbury.ie",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "www.winwithphilly.no",
+        "type": "URL",
+        "match": "www.winwithphilly.no",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "www.saltinesoffer.com",
+        "type": "URL",
+        "match": "www.saltinesoffer.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "winforyoursquad.cadbury.co.uk",
+        "type": "URL",
+        "match": "winforyoursquad.cadbury.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "mondelezcanadafoodservice.ca",
+        "type": "URL",
+        "match": "mondelezcanadafoodservice.ca",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "pranktheroutine.com",
+        "type": "URL",
+        "match": "pranktheroutine.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "belvitasnacks.com",
+        "type": "URL",
+        "match": "belvitasnacks.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "amikekszunkjatek.hu",
+        "type": "URL",
+        "match": "amikekszunkjatek.hu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "snackingright.com.au",
+        "type": "URL",
+        "match": "snackingright.com.au",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "oreo.com",
+        "type": "URL",
+        "match": "oreo.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "oplatky-kolonada.cz",
+        "type": "URL",
+        "match": "oplatky-kolonada.cz",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "snackmindful.com",
+        "type": "URL",
+        "match": "snackmindful.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "concorsocoop.philadelphia.it",
+        "type": "URL",
+        "match": "concorsocoop.philadelphia.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "snackworks.ca",
+        "type": "URL",
+        "match": "snackworks.ca",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "www.promocaomisturaquecombina.com.br",
+        "type": "URL",
+        "match": "www.promocaomisturaquecombina.com.br",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "admit-it.cadbury.ie",
+        "type": "URL",
+        "match": "admit-it.cadbury.ie",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "vn.oreobts.com",
+        "type": "URL",
+        "match": "vn.oreobts.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "servicesalimentairesmondelezcanada.ca",
+        "type": "URL",
+        "match": "servicesalimentairesmondelezcanada.ca",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "giveawaygiveaway.cadbury.co.uk",
+        "type": "URL",
+        "match": "giveawaygiveaway.cadbury.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "win.cadbury.co.uk",
+        "type": "URL",
+        "match": "win.cadbury.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "barniadventures.com",
+        "type": "URL",
+        "match": "barniadventures.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "www.snackmindful.com",
+        "type": "URL",
+        "match": "www.snackmindful.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "clifbar.ca",
+        "type": "URL",
+        "match": "clifbar.ca",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "winwithphilly.dk",
+        "type": "URL",
+        "match": "winwithphilly.dk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "my.oreosea.com",
+        "type": "URL",
+        "match": "my.oreosea.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "oreo.bg",
+        "type": "URL",
+        "match": "oreo.bg",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "philadelphia.com.mx",
+        "type": "URL",
+        "match": "philadelphia.com.mx",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "milka.cl",
+        "type": "URL",
+        "match": "milka.cl",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "spkwatermelonslurpee.th12ty.com",
+        "type": "URL",
+        "match": "spkwatermelonslurpee.th12ty.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "cadburydessertscorner.com",
+        "type": "URL",
+        "match": "cadburydessertscorner.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "timeoutz4snacks.com",
+        "type": "URL",
+        "match": "timeoutz4snacks.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "royalbakingpowder.co.za",
+        "type": "URL",
+        "match": "royalbakingpowder.co.za",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "chappies.co.za",
+        "type": "URL",
+        "match": "chappies.co.za",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "oreo.eu",
+        "type": "URL",
+        "match": "oreo.eu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "enjoylifefoods.ca",
+        "type": "URL",
+        "match": "enjoylifefoods.ca",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "egypt.oreostayplayful.com",
+        "type": "URL",
+        "match": "egypt.oreostayplayful.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "extra.milka.de",
+        "type": "URL",
+        "match": "extra.milka.de",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "vyhrajschuti.cz",
+        "type": "URL",
+        "match": "vyhrajschuti.cz",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "vincicoppaitalia.it",
+        "type": "URL",
+        "match": "vincicoppaitalia.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "oreo-la.com",
+        "type": "URL",
+        "match": "oreo-la.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "oreo.com.au",
+        "type": "URL",
+        "match": "oreo.com.au",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "snackdisplay.co.uk",
+        "type": "URL",
+        "match": "snackdisplay.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "gol.oreo.mx",
+        "type": "URL",
+        "match": "gol.oreo.mx",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "https://www.tatesbakeshop.com",
+        "type": "URL",
+        "match": "https://www.tatesbakeshop.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "liga.nl",
+        "type": "URL",
+        "match": "liga.nl",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "contactus.mdlzapps.com",
+        "type": "URL",
+        "match": "contactus.mdlzapps.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "miracelwhip.de",
+        "type": "URL",
+        "match": "miracelwhip.de",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "sottilette.it",
+        "type": "URL",
+        "match": "sottilette.it",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "promo.royalcontigo.com",
+        "type": "URL",
+        "match": "promo.royalcontigo.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "tiendamondelez.es",
+        "type": "URL",
+        "match": "tiendamondelez.es",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "give-a-little-thanks.cadbury.co.za",
+        "type": "URL",
+        "match": "give-a-little-thanks.cadbury.co.za",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "promo.milka.com",
+        "type": "URL",
+        "match": "promo.milka.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "insights.mdlzawayfromhome.com",
+        "type": "URL",
+        "match": "insights.mdlzawayfromhome.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "freia.no",
+        "type": "URL",
+        "match": "freia.no",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "oreocookie.jp",
+        "type": "URL",
+        "match": "oreocookie.jp",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "admit-it.cadbury.co.uk",
+        "type": "URL",
+        "match": "admit-it.cadbury.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "bee.harmony.info",
+        "type": "URL",
+        "match": "bee.harmony.info",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "br.oreobts.com",
+        "type": "URL",
+        "match": "br.oreobts.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "suporter-tuc.ro",
+        "type": "URL",
+        "match": "suporter-tuc.ro",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "royalcontigo.com",
+        "type": "URL",
+        "match": "royalcontigo.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "instoreeggucation.com",
+        "type": "URL",
+        "match": "instoreeggucation.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "milkapromo.hu",
+        "type": "URL",
+        "match": "milkapromo.hu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "tiendamondelez.com.uy",
+        "type": "URL",
+        "match": "tiendamondelez.com.uy",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "promocjamilka.pl",
+        "type": "URL",
+        "match": "promocjamilka.pl",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "fundraising.com.au",
+        "type": "URL",
+        "match": "fundraising.com.au",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "mmmax.milka.at",
+        "type": "URL",
+        "match": "mmmax.milka.at",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "tuckesa.fi",
+        "type": "URL",
+        "match": "tuckesa.fi",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "tayyarijeetki.in",
+        "type": "URL",
+        "match": "tayyarijeetki.in",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "sg.oreobts.com",
+        "type": "URL",
+        "match": "sg.oreobts.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "vyhrajschutou.sk",
+        "type": "URL",
+        "match": "vyhrajschutou.sk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "smartlabel.mondelez.info",
+        "type": "URL",
+        "match": "smartlabel.mondelez.info",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "coffeecallsforbelvita.com",
+        "type": "URL",
+        "match": "coffeecallsforbelvita.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "belvitaoffer.com",
+        "type": "URL",
+        "match": "belvitaoffer.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "www.clifbar.ca",
+        "type": "URL",
+        "match": "www.clifbar.ca",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "tobleronearabia.com",
+        "type": "URL",
+        "match": "tobleronearabia.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "miamicfsweepstakes.com",
+        "type": "URL",
+        "match": "miamicfsweepstakes.com",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "beldent.com.ar",
+        "type": "URL",
+        "match": "beldent.com.ar",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "https://xn--90aiakgkqi1l.xn--p1ai/",
+        "type": "URL",
+        "match": "https://xn--90aiakgkqi1l.xn--p1ai/",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "none",
+          "confidentiality": "none",
+          "integrity": "none"
+        }
+      },
+      {
+        "identifier": "tuc.eu",
+        "type": "URL",
+        "match": "tuc.eu",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "heritageadvertising.cadbury.co.uk",
+        "type": "URL",
+        "match": "heritageadvertising.cadbury.co.uk",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": true,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      }
+    ],
+    "explicitlyOutOfScopeAssetsFromScopeTable": [
+      {
+        "identifier": "https://cadburygifting.in",
+        "type": "URL",
+        "match": "https://cadburygifting.in",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": false,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      },
+      {
+        "identifier": "Leaked Credentials",
+        "type": "OTHER",
+        "match": "Leaked Credentials",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": false,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "www.cadburygifting.in",
+        "type": "URL",
+        "match": "www.cadburygifting.in",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": false,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "not_defined",
+          "confidentiality": "not_defined",
+          "integrity": "not_defined"
+        }
+      },
+      {
+        "identifier": "bot.cadburygifting.in",
+        "type": "URL",
+        "match": "bot.cadburygifting.in",
+        "eligibleForBounty": false,
+        "eligibleForSubmission": false,
+        "maxSeverity": "critical",
+        "requirements": {
+          "availability": "high",
+          "confidentiality": "high",
+          "integrity": "high"
+        }
+      }
+    ],
+    "policyOutOfScope": [
+      "Any system not specified in Appendix A: In-scope systems",
+      "Third-party websites, applications, or services that integrate with or link to/from Mondelēz International systems"
+    ]
+  },
+  "restrictions": {
+    "excludedVulnerabilityClasses": [
+      "self-xss",
+      "unauthenticated-logout-login-csrf",
+      "mitm-or-physical-access-required",
+      "denial-of-service",
+      "ssl-tls-best-practices",
+      "content-spoofing-or-text-injection-without-attack-vector-or-html-css-modification",
+      "publicly-known-zero-day-with-patch-available-for-30-days-or-less"
+    ],
+    "destructiveActionsAllowed": false,
+    "automatedScanningAllowed": null,
+    "socialEngineeringAllowed": false,
+    "physicalAttacksAllowed": false,
+    "serviceDisruptionAllowed": false,
+    "credentialReuseFromExposureAllowed": false,
+    "dataExfiltrationAllowed": false,
+    "thirdPartyTestingAllowed": false,
+    "minimalExploitationOnly": true,
+    "stopOnSensitiveData": true
+  },
+  "authentication": {
+    "credentialsProvided": false,
+    "selfSignUp": "Where available",
+    "signUpUrl": null,
+    "testAccountGuidance": "Where possible, self-register using <HackerOne-username>+x@wearehackerone.com / your @wearehackerone.com alias.",
+    "emailAliasFormat": "<HackerOne-username>+x@wearehackerone.com",
+    "accountRules": [
+      "No credentials are provided by the program.",
+      "Do not use exposed credentials to continue testing without written consent from Mondelēz International.",
+      "Only self-register where the in-scope application provides registration."
+    ]
+  },
+  "trafficIdentification": {
+    "required": true,
+    "headerName": "X-Mondelez-VDP",
+    "headerValueFormat": "HackerOne-<HackerOne-username>",
+    "example": "X-Mondelez-VDP: HackerOne-H4x0r",
+    "reportSourceIp": true,
+    "notes": [
+      "Always tag testing traffic.",
+      "Include the testing source IP address in the submission.",
+      "Tell the program which custom header value was used."
+    ]
+  },
+  "platformStandardsDeviations": [],
+  "exemplaryStandards": [],
+  "programRules": [
+    "Notify the program immediately upon discovery of real or potential security issues.",
+    "Discard and purge any stored Mondelēz International data upon reporting a vulnerability.",
+    "Do not test systems outside Appendix A.",
+    "Do not perform DoS, DDoS, or testing that may disrupt, impair, or disable systems.",
+    "Do not socially engineer employees, contractors, or customers.",
+    "Do not physically test facilities or resources.",
+    "Do not send phishing, vishing, or other unsolicited social-engineering communications.",
+    "Exploit only the minimal amount required to identify an indicator of the vulnerability.",
+    "Do not compromise, copy, or exfiltrate data.",
+    "Do not test third-party sites, applications, or services linked to or integrated with Mondelēz systems.",
+    "If sensitive, personally identifiable, or proprietary data is encountered, stop testing immediately and report it.",
+    "Do not discuss the program or vulnerabilities, including resolved vulnerabilities, outside the program without express written consent from Mondelēz International."
+  ],
+  "reportRequirements": [
+    "URL",
+    "Vulnerability description",
+    "Potential impact",
+    "Step-by-step reproduction instructions with technical details",
+    "Proof-of-concept code, if used",
+    "Remediation or mitigation recommendations",
+    "Tools used",
+    "Testing source IP address",
+    "Custom X-Mondelez-VDP header value used"
+  ],
+  "safeHarbor": "Research conducted in accordance with the policy is considered authorized. Mondelēz International states it will not recommend or pursue legal action against activities performed in accordance with the policy."
+}
